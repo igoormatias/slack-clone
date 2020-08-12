@@ -37,17 +37,15 @@ function Sidebar() {
             <SidebarOptions Icon={InboxIcon} title="Mentions & reactions" />
             <SidebarOptions Icon={DraftsIcon} title="Saved items" />
             <SidebarOptions Icon={BookmarkBorderIcon} title="Channel browser" />
-            <SidebarOptions Icon={PeopleAltIcon} title="People user groups" />
+            <SidebarOptions Icon={PeopleAltIcon} title="People user & groups" />
             <SidebarOptions Icon={AppsIcon} title="Apps" />
             <SidebarOptions Icon={FileCopyIcon} title="Channel browser" />
             <SidebarOptions Icon={ExpandLessIcon} title="Show Less" />
             <hr />
             <SidebarOptions Icon={ExpandMoreIcon} title="Channels" />
-            <SidebarOptions Icon={AddIcon} title="Channels" />
             <hr />
-            
-
-        </div>
+            <SidebarOptions Icon={AddIcon} title="Add Channel" />
+         </div>
   ); 
 }
 
