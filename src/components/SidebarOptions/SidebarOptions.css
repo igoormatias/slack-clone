@@ -4,6 +4,7 @@
     font-size:  12px;
     padding-left: 2px;
     cursor: pointer;
+    padding-right: 80px;
 
 }
 
@@ -26,4 +27,8 @@
 
 .sidebarOption > h3 {
     font-weight: 500;
+}
+hr {
+    
+    border: 0.3px solid rgb(82,38,83);
 }
