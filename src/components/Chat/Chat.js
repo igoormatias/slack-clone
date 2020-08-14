@@ -2,18 +2,23 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import {useHistory } from 'react-router-dom'
 
 import  './Chat.css';
 
 function Chat() {
     const { roomId } = useParams();
+    const uhistory = useHistory()
+    console.log(uhistory)
   return (
+
+    
       <div className="chat">
          
           <div className="chat__header">
               <div className="chat__headerLeft">
                   <h4 className="chat__channelName">
-                      <strong>#General</strong>
+                      <strong>{roomId}</strong>
                       <StarBorderOutlinedIcon/>
                   </h4>
 

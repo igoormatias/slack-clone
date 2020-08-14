@@ -1,5 +1,4 @@
 import React,{ useState,useEffect} from 'react';
-
 import db from '../../services/firebase'
 
 import SidebarOptions from '../SidebarOptions/SidebarOptions'
@@ -21,6 +20,7 @@ import AddIcon from '@material-ui/icons/Add';
 
 function Sidebar() {
     const [ channels, setChannels] = useState([])
+   
 
     useEffect(()=>{
         db.collection('rooms').onSnapshot(snapshot =>(
@@ -66,8 +66,10 @@ function Sidebar() {
                 <SidebarOptions  key={channel.id}
                 title={channel.name} 
                 id={channel.id} />
+                
 
             ))}
+            
          </div>
   ); 
 }

@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { BrowserRouter,  Route, } from 'react-router-dom';
+import { BrowserRouter,  Route } from 'react-router-dom';
+ import { createBrowserHistory } from 'history';
 
 
 
@@ -9,17 +10,28 @@ import Sidebar from './components/Sidebar/Sidebar'
 
 
 
+
+
 export default function Routes() {
+    
+    const history = createBrowserHistory();
+    
     return (
-        <BrowserRouter>
+        <BrowserRouter history={history} >
         
            
                 <Route path="/" exact>
+                    
+                    <Sidebar />
                     <h1>
                         Welcome
                     </h1>
                     </Route>
-                <Route component={Chat} path="/room/:roomId"/>
+                <Route path="/room/:roomId">
+                <Sidebar />
+                <Chat />
+                
+                </Route>
                    
                     
            

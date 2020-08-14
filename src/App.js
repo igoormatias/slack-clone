@@ -13,7 +13,7 @@ function App() {
        <Header />
        
       <div className="app__body">
-        <Sidebar />
+        
         <Routes/>
         
       </div>
